@@ -1,0 +1,73 @@
+body{
+	background-image:url("university.jpg");
+}
+
+#background
+{
+	margin:30px;
+	background-color: #ffffff;
+	opacity:0.8;
+}
+
+.a{
+	font-size:16px;
+	
+	padding:5px;
+	text-align:left;
+}
+
+#StudentDivDis{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#DisplayInsDelUpdate{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#StudentDivIns{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#StudentDivDel{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#StudentDivUpdate{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#StudentUpdateFill{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+#Menu{
+  border : solid 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+button{
+	padding:3px;
+}
+
+#header1{
+	text-align:left;
+}
+
+footer{
+	clear:both;
+	
+	text-align:right;
+}

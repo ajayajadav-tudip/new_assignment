@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>JSON Object in JS</title>
+  </head>
+  <body>
+	
+	<p id="demo"></p>
+	
+	<p id="arr"></p>
+	<script>
+	
+	  var i;
+	  var x='{"FirstName":"Ajay","LastName":"Jadhav","Phone":"8237121682"}';
+	  
+	  var employees=[{"FName":"Ajay","LName":"Jadhav","Mobile":"8237121682"},{"FName":"Vijay","LName":"Jadhav"},{"FName":"xyz","Mobile":"9999999999"}];
+	  
+	  var table = "<table border=1 width=100%><tr><th>FName</th><th>LName</th><th>Mobile</th></tr>";
+	  for(i=0; i<employees.length ; i++)
+	  {
+	    table += "<tr><td>"+
+	    employees[i].FName+"</td><td>"+employees[i].LName+"</td><td>"+employees[i].Mobile+"</td></tr>";
+	  }
+	  document.getElementById("arr").innerHTML=table;
+	  var obj=JSON.parse(x);
+	  
+	  document.getElementById("demo").innerHTML=obj.FirstName + "<br/>" +obj.Phone;
+	
+	</script>
+  </body>
+</html>

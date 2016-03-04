@@ -1,0 +1,7 @@
+var Students = [{"firstName":"Shrikant", "lastName":"Walekar", "rollNo": "1", "subjects": "Science"},
+		{"firstName":"Harshad", "lastName":"Devle", "rollNo": "2", "subjects": "Maths"},
+		{"firstName":"Vinayak", "lastName":"Kulkarni", "rollNo": "3", "subjects": "Biology"},
+		{"firstName":"vishwanath", "lastName":"Honrao", "rollNo": "4", "subjects": "History"},
+		{"firstName":"Suraj", "lastName":"Chavan", "rollNo": "5", "subjects": "Geography"}
+		];
+

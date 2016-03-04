@@ -1,0 +1,67 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id="demo">Display Here</div>
+		
+		<button type="button" onclick="myFunction()" ondblclick="myFunctionArray()" id="button1">Click me for Non Array</button>
+		
+		<script>
+			function myFunction()
+			{
+				var xhttp=new XMLHttpRequest();
+				var url="json.txt";
+				
+				xhttp.onreadystatechange= function(){
+					if(xhttp.readyState==4 && xhttp.status==200)
+					{
+						var jsondata=JSON.parse(xhttp.responseText);
+						//alert(jsondata);
+						myFunction1(jsondata);
+					}
+				
+				};
+				xhttp.open("GET",url,true);
+				xhttp.send();
+				
+			}
+			
+			function myFunction1(arr)
+			{
+				//alert("here");
+				document.getElementById("demo").innerHTML=arr.firstName+"  "+arr.lastName+"   "+arr.rollNo;
+				document.getElementById("button1").innerHTML="Double Click me for ArrayList";
+			}
+			
+			function myFunctionArray()
+			{
+				var xmlhttp=new XMLHttpRequest();
+				var url1="jsonArray.txt";
+				
+				xmlhttp.onreadystatechange=function(){
+					if(xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						var jsonarraydata=JSON.parse(xmlhttp.responseText);
+						myFunctionArray1(jsonarraydata);
+					}
+				};
+				xmlhttp.open("GET",url1,true);
+				xmlhttp.send();
+			}
+			
+			function myFunctionArray1(arr)
+			{
+				var out="<table border=1><tr><th>FirstName</th><th>LastName</th></tr>";
+				var i;
+				
+				for(i=0;i<arr.length;i++)
+				{
+					out+="<tr><td>"+arr[i].firstName+"</td><td>"+arr[i].lastName+"</td></tr>";
+				}
+				out+="</table>";
+				document.getElementById("demo").innerHTML=out;
+				document.getElementById("button1").innerHTML="Single Click me for Non-Array";
+			}
+		</script>
+	</body>
+</html>

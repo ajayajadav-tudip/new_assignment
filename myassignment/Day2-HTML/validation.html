@@ -1,0 +1,22 @@
+<html>
+	<head>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="/Assignment/jquery-validation-1.15.0/dist/jquery.validate.js"></script>
+	</head>
+	<body>
+		<form action="#" id="form1" method="get">
+			Number:<input type="number" name="num1" id="num1" required>
+			name:<input type="text" name="text1" id="text1" required>
+			<input type="submit" id="button1" onclick="validation()" value="submit">
+		</form>
+		
+		<script>
+			$(document).ready(function(){
+				
+					$("#form1").validate();
+			
+			});
+			
+		</script>
+	</body>
+</html>

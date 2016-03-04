@@ -1,0 +1,12 @@
+﻿ {
+            "FirstName": "Vinayak",
+            "LastName": "Kulkarni",
+            "ContactNo": "9765790986",
+            "Email": "kvinayak3298@gmail.com",
+            "Address": {
+                "City": "Vita",
+                "State": "Maharashtra",
+                "Zip": "415311"
+            }
+        }
+    

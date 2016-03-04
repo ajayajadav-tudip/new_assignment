@@ -1,0 +1,6 @@
+var stud=[
+{"firstName":"Ajay","lastName":"Jadhav","rollNo":"1","subjects":"Math"},
+{"firstName":"Vijay","lastName":"Jadhav","rollNo":"2","subjects":"Science"},
+{"firstName":"Deepak","lastName":"Shinde","rollNo":"3","subjects":"Chemistry"},
+{"firstName":"Deepa","lastName":"Pawar","rollNo":"4","subjects":"Physics"}
+]

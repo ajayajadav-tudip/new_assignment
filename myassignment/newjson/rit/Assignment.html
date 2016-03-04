@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="assignment.js"></script>
+  <script src="studentData.json"></script>
+  <link rel="stylesheet" type="text/css" href="assignment.css">
+  <marquee><h1 style="color:Red">Student Database</h1></marquee>
+ </head>
+ <body>
+ 
+ <div id="menu">
+<button id ="addStudentbutton">Add</button>
+<button id= "deleteStudentbutton">Delete</button>
+<button id="updateStudentButton">Update</button>
+</div>
+
+<div id="addstudent">
+  <input type="text" id = "newFirstName" placeholder="First Name"> 
+  <input type="text" id = "newLastName" placeholder="Last Name"> 
+  <input type="number" id = "newRollNo" placeholder="Roll Number">
+  <input type="text" id = "newSubjects" placeholder="Subjects">  
+  <button id="closeAddStu" onClick="addStudentInfo()" > Add to Database</button>
+</div>
+
+<div id="deletestudent">
+<input type="text" id = "deleteByName" placeholder="Enter Name To delete">
+<button class="closeDelStu" onClick="deleteStudent()">Delete </button>
+</div>
+
+<div id = "updateStu">
+<input type="text" id = "updateByName" placeholder="Enter Name To Update">
+<button class="updateStu" onClick="updateByName()">Update</button>
+
+<div id="updateByNameDiv">
+<input type="text" id = "updateFirstName" placeholder="Firstname">
+<input type="text" id = "updateLasttName" placeholder="Lastname">
+<input type="text" id = "updateRollNo" placeholder="Roll No">
+<input type="text" id = "updateSubjects"placeholder="Subjects">
+<button id="updateInDb" onClick="updateInDb()">Update</button>
+</div>
+</div>
+
+
+<br>
+
+<button id ="flip" onClick="showStudentList()">Show Student List</button>
+<div id="studentDiv"></div>
+  
+</body>
+</html>

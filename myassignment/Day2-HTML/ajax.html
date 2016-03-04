@@ -1,0 +1,48 @@
+<html>
+  <head>
+     <title>
+	    Ajax Example
+	 </title>
+  </head>
+  <body>
+    <p id="demo">Let's Ajax change the content</p>
+	
+	<button type="button" onclick="loadDoc()">change content</button>
+	
+	<script>
+	  function loadDoc(){
+	    alert("hello");
+	    var xhttp=new XMLHttpRequest();
+		alert(xhttp);
+		xhttp.onreadystatechange=function(){
+		  if(xhttp.readyState==0)
+		  {
+		    alert("Request Not Intialized");
+		  }
+		  if(xhttp.readyState==1)
+		  {
+		    alert("Server Connection Established");
+		  }
+		  if(xhttp.status==404)
+		  {
+		    alert("page not found");
+		  }
+		  if(xhttp.readyState==2)
+		  {
+		    alert("request Received");
+		  }
+		  if(xhttp.readyState==3)
+		  {
+		    alert("Processing Request");
+		  }
+		  if(xhttp.readyState==4 && xhttp.status==200)
+		  {
+		    document.getElementById("demo").innerHTML=xhttp.responseText;
+		  }
+		};
+		xhttp.open("GET", "ajax_example.txt", true);
+		xhttp.send();
+	  }
+	</script>
+  </body>
+</html>

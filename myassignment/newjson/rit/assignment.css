@@ -1,0 +1,45 @@
+#studentDiv, #flip {
+padding: 5px;
+text-align: center;
+background-color: light blue;
+border: solid 1px;
+}
+
+#menu{
+padding: 10px;
+text-align: center;
+border: solid 2px;
+}
+
+#studentDiv {
+padding: 30px;
+display: blue;
+}
+
+#flip:hover{
+background-color:silver;
+font-size:bold;
+color:red
+}
+
+#addstudent{
+padding: 5px;
+text-align: center;
+border: solid 1px;
+}
+
+#deletestudent{
+padding: 5px;
+text-align: center;
+border: solid 1px;
+}
+
+button, div, input{
+padding:3px;}
+
+#updateStu{
+padding: 5px;
+text-align: center;
+border: solid 1px;
+}
+ 

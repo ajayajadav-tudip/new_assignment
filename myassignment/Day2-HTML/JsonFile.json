@@ -1,0 +1,6 @@
+var info=
+[
+{"FName":"Ajay","LName":"Jadhav","Rollno":"1","Subjects":"Math"},
+{"FName":"Vijay","LName":"Jadhav","Rollno":"2","Subjects":"Science"},
+{"FName":"XYZ","LName":"ABC","Rollno":"3","Subjects":"Arts"}
+]

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Ajax_XML</title>
+  </head>
+  <body>
+    <table id="demo">Display content here</table>
+	
+	<button type="button" onclick="loadDoc()">click me!</button>
+ 
+	<script>
+	  function loadDoc(){
+	  
+	    var xhttp= new XMLHttpRequest();
+		xhttp.onreadystatechange=function(){
+		  if(xhttp.readyState==0)
+		  {
+		    alert("Request Not Intialized");
+		  }
+		  if(xhttp.readyState==1)
+		  {
+		    alert("Server Connection Established");
+		  }
+		  if(xhttp.readyState==2)
+		  {
+		    alert("Request Received");
+		  }
+		  if(xhttp.readyState==3)
+		  {
+		    alert("Request Processed");
+		  }
+		  if(xhttp.readyState==4 && xhttp.status==200)
+		  {
+		    myFunction(xhttp);
+		  }
+		};
+		xhttp.open("GET","example.xml",true);
+		xhttp.send();
+	  }
+	  function myFunction(xml)
+	  {
+	    var i;
+		var xmlDoc=xml.responseXML;
+		var table="<tr><th>FirstName</th><th>LastName</th></tr>";
+		var x=xmlDoc.getElementsByTagName("student");
+		for(i=0;i<x.length;i++)
+		{
+		  table +="<tr><td>"+
+		  x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue+
+		  "</td><td>"+
+		  x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue+
+		  "</td></tr>";
+		}
+		document.getElementById("demo").innerHTML=table;
+	  }
+	</script>
+ </body>
+</html>

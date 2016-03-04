@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="Assignment.css">
+		<script src="StudentData.json"></script>
+		<script src="Assignment.js"></script>
+	</head>
+	<body onload="StudentInfo()" style="background-image: url(university.jpg) ">
+
+<div id="background">	
+	<div id="header12" style="background-color:grey">
+		<header id="header1">
+		
+			<h1><center><span style="color: white">Student Details</span></center></h1>
+		</header>
+	</div>
+	
+	<div id="Menu">
+			<button type="button" id="Add1" data-toggle="tooltip" title="Click For Add!">Add Record</button>
+			<button type="button" id="Delete1" data-toggle="tooltip" title="Click For Delete!">Delete Record</button>
+			<button type="button" id="update1" data-toggle="tooltip" title="Click For Update!">Update Record</button>
+	</div>
+		
+	<div id="StudentDivDis"></div>
+		
+	<div id="DisplayInsDelUpdate">	
+		<div id="StudentDivIns">
+		<header class="a">Please Add Details For Insert</header>
+			<input type="text" name="newFirstName" id="newFirstNameId" placeholder="FirstName" data-toggle="tooltip" title="First Name Plz!">
+			<input type="text" name="newLastName" id="newLastNameId" placeholder="LastName" data-toggle="tooltip" title="Last Name Plz!">
+			<input type="number" name="newRollNo" id="newRollNoId" placeholder="RollNo" data-toggle="tooltip" title="RollNo Plz!">
+			<input type="text" name="newSubjectName" id="newSubjectName" placeholder="SubjectName" data-toggle="tooltip" title="subject Plz!">
+<!--			<input list="Subjects" name="newSubjectName" placeholder="SubjectName" data-toggle="tooltip" title="">
+				<datalist id="newSubjectName">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Chrome">
+					<option value="Opera">
+					<option value="Safari">
+				</datalist>  -->
+			<input type="button" onclick="addStudentInfo()" value="Add" data-toggle="tooltip" title="Click For Add!">
+		</div>
+		
+		<div id="StudentDivDel">
+		<header class="a">Please Provide FirstName that U Want to Delete</header>
+			<input type="text" name="FirstName" id="deleteByName" placeholder="Enter First Name To Delete" data-toggle="tooltip" title="First Name Plz!">
+			<input type="button" onclick="deleteStudentInfo()" value="Delete" data-toggle="tooltip" title="Click For Delete!">
+		</div>
+		
+		<div id="StudentDivUpdate">
+		<header class="a">Please Provide FirstName that U Want to Update</header>
+			<input type="text" name="FirstName" id="UpdateByName" placeholder="Enter First Name To Update" data-toggle="tooltip" title="First Name Plz!">
+			<input type="button" id="UpdateButton" onclick="updateStudentInfo()" value="Update" data-toggle="tooltip" title="Click For Update!">
+		</div>
+		
+		<div id="StudentUpdateFill">
+		<header class="a">Please Add new details for update</header>
+			<input type="text" name="FirstName" id="UpdateFirstName" placeholder="FirstName" data-toggle="tooltip" title="First Name Plz!">
+			<input type="text" name="LastName" id="UpdateLastName" placeholder="LastName" data-toggle="tooltip" title="Last Name Plz!">
+			<input type="number" name="RollNo" id="UpdateRollNo" placeholder="RollNo" data-toggle="tooltip" title="RollNo Plz!">
+			<input type="text" name="SubjectName" id="UpdateSubjectName" placeholder="SubjectName" data-toggle="tooltip" title="Subject Plz!">
+			<input type="button" onclick="updateStudentTable()" value="Update" data-toggle="tooltip" title="Click For Update!">
+		</div>
+	</div>
+</div>
+	</body>
+</html>

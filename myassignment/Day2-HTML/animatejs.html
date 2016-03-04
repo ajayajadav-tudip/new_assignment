@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+	  #container{
+	    height:500px;
+		width:500px;
+		position:relative;
+		background:yellow;
+	  }
+	  #animate{
+	    height:50px;
+		width:50px;
+		position:absolute;
+		background:red;
+	  }
+	</style>
+  </head>
+  <body onload="myMove()">
+    <div id="container">
+	<div id="animate"></div>
+    </div>
+	
+	<script>
+	  function myMove()
+	  {
+	    var elem=document.getElementById("animate");
+		var pos=0;
+		var id=setInterval(frame,5);
+		function frame(){
+		  if(pos==450)
+		  {
+		    clearInterval(id);
+		  }
+		  else
+		  {
+		    pos++;
+			elem.style.top=pos + 'px';
+			elem.style.left=pos + 'px';
+		  }
+		}
+	  }
+	</script>
+  </body>
+</html>

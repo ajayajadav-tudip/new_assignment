@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>page</title>
+		<style>
+			#second{
+				background-color:lightgrey;
+				height:400px;
+				width:600px;
+				border-style:groove;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:110px;
+				margin-bottom:auto;
+				}
+			#first{
+				border-radius:25px;
+				height:300px;
+				width:400px;
+				border-style:ridge;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:50px;
+				margin-bottom:auto;
+				align:center;
+				}
+			#third{
+				padding-bottom:10px;
+				}
+			#fourth{
+				padding-bottom:10px;
+				}
+		</style>
+		
+		<script src="loginjs.js"></script>
+		
+	</head>
+	
+	<body style="background-color:aliceblue">
+		<div id="second">
+			<div id="first" align="center">
+				<form name="myForm" onsubmit="validateForm()">
+					<h1>Sign in</h1>
+					<hr>
+					<div id="third"style="font-family:Georgia;font-size:25">
+						Username<br>
+						<input name="fname1" type="text" style="height:20px;width:200px" ><br>
+					</div>
+					<div id="fourth"style="font-family:Georgia;font-size:25">
+					Password<br>
+					<input name="fname"type="password" style="height:20px;width:200px"><br>
+					</div>
+					<input type="submit" style="height:30px;width:100px" value="Submit">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+	  $(document).ready(function(){
+	    $("#b1").click(function(){
+		  $("p").hide();
+		});
+		
+		$("#b1").dblclick(function(){
+		  $("p").show();
+		});
+		
+		$("#b2").click(function(){
+		  $("p").fadeIn(5000);
+		});
+		
+		$("#b2").dblclick(function(){
+		  $("p").fadeOut(5000);
+		});
+		
+	  });
+	</script>
+  </head>
+  <body id="body1">
+    <p>If You click on me i will disappear</p>
+	<p>me too</p>
+	<button id="b1" type="button">Click</button>
+	<button id="b2" type="button">Fade Click</button>
+  </body>
+</html>

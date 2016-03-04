@@ -1,0 +1,57 @@
+<html>
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style>
+	  #id1 {
+	    background: cyan;
+		height:100px;
+		width:100px;
+		position:absolute;
+	  }
+	</style>  
+	  <script>
+	    $(document).ready(function(){
+		  $("button").click(function(){
+		    $("div").animate({
+			  height:'150px',
+			  opacity:'0.4'
+			});
+			$("div").animate({
+			  width:'150px',
+			  opacity:'0.8'
+			});
+			$("div").animate({
+			  height:'100px',
+			  opacity:'0.4'
+			});
+			$("div").animate({
+			  width:'100px',
+			  opacity:'0.8'
+			});
+		  });
+		});
+	  </script>
+	  
+	  <script>
+	    $().ready(function(){
+		  $("#button1").click(function(){
+		    alert("Text:"+$("#test").html());
+		  });
+		  
+		  $("#button2").click(function(){
+		    alert("Text:"+$("#test").text());
+		  });
+		});
+	  </script>
+	
+  </head>
+  <body>
+    <p id="test">this the text we are going to see in <b>PoP-Up Box</b>.</p>
+    <button>Start Animation</button>
+	
+	<button id="button1" type="button">Show HTML</button>
+    <button id="button2" type="button">Show Text</button>
+	
+	<div id="id1"></div>
+  </body>
+</html>

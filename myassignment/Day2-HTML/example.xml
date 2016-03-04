@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<catalog>
+  <student>
+    <firstname>Ajay</firstname>
+	<lastname>Jadhav</lastname>
+	<rollno>1</rollno>
+  </student>
+  <student>
+    <firstname>Vijay</firstname>
+	<lastname>Jadhav</lastname>
+	<rollno>2</rollno>
+  </student>
+  <student>
+    <firstname>jay</firstname>
+	<lastname>Jadhav</lastname>
+	<rollno>3</rollno>
+  </student>  
+</catalog>

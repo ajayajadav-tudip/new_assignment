@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+	  #b1{
+	    height:50px;
+		width:150px;
+		padding:10px;
+		background-color:red;
+		color:black;
+	  }
+	</style>
+  </head>
+  <body>
+    <button id="b1" type="button" onmouseover="mover(this)" onmouseout="mout(this)">Mouse Over Me</button>
+	<script>
+	  function mover(obj)
+	  {
+	    obj.innerHTML="Thank you";
+	  }
+	  function mout(obj)
+	  {
+	    obj.innerHTML="Mouse Over Me";
+	  }
+	</script>
+  </body>
+</html>
